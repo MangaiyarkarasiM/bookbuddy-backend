@@ -1,0 +1,28 @@
+{
+  "name": "librarysystem-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1214.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.2",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "razorpay": "^2.8.3",
+    "sequelize": "^6.21.6",
+    "shortid": "^2.2.16",
+    "validator": "^13.7.0"
+  }
+}
