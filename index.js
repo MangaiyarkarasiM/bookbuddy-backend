@@ -1,11 +1,9 @@
-#!/usr/bin/env node
-
 /**
  * Module dependencies.
  */
- const dotenv = require("dotenv");
- dotenv.config();
-var app = require('../app');
+const dotenv = require("dotenv");
+dotenv.config();
+const app = require('./app');
 var debug = require('debug')('librarysystem-backend:server');
 var http = require('http');
 
