@@ -6,7 +6,8 @@
     "node" : "14.x"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "npm run build"
   },
   "dependencies": {
     "aws-sdk": "^2.1214.0",
