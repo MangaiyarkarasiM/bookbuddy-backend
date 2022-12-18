@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "engines": {
-    "node" : "14.x"
+    "node": "14.x"
   },
   "scripts": {
     "start": "node index.js",
@@ -23,6 +23,7 @@
     "moment": "^2.29.4",
     "mongoose": "^6.6.0",
     "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "razorpay": "^2.8.3",
     "sequelize": "^6.21.6",
