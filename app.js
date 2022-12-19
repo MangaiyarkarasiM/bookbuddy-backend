@@ -12,7 +12,17 @@ var rentRouter = require('./routes/rents');
 var paymentRouter = require('./routes/razorpay');
 
 var app = express();
+var cors = require('cors');
 
+app.options("*", cors({ origin: ['http://localhost:3000', 'https://book-buddy.s3-website-us-east-1.amazonaws.com'], optionsSuccessStatus: 200 }));
+
+const corsOptions = {
+  origin: '*',
+  methods: ['POST', 'GET', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}
+
+app.use(cors(corsOptions));
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'jade');

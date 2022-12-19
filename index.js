@@ -8,10 +8,12 @@ var debug = require('debug')('librarysystem-backend:server');
 var http = require('http');
 var cors = require('cors');
 
+app.options("*", cors({ origin: ['http://localhost:3000', 'https://book-buddy.s3-website-us-east-1.amazonaws.com'], optionsSuccessStatus: 200 }));
+
 const corsOptions = {
   origin: '*',
   methods: ['POST', 'GET', 'PATCH', 'DELETE', 'OPTIONS'],
-  //allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization']
 }
 
 app.use(cors(corsOptions));
