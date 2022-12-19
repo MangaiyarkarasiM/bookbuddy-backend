@@ -6,7 +6,8 @@ dotenv.config();
 const app = require('./app');
 var debug = require('debug')('librarysystem-backend:server');
 var http = require('http');
-
+var cors = require('cors');
+app.use(cors());
 /**
  * Get port from environment and store in Express.
  */
