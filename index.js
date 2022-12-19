@@ -7,7 +7,14 @@ const app = require('./app');
 var debug = require('debug')('librarysystem-backend:server');
 var http = require('http');
 var cors = require('cors');
-app.use(cors());
+
+const corsOptions = {
+  origin: '*',
+  methods: ['POST', 'GET', 'PATCH', 'DELETE', 'OPTIONS'],
+  //allowedHeaders: ['Content-Type', 'Authorization']
+}
+
+app.use(cors(corsOptions));
 /**
  * Get port from environment and store in Express.
  */
