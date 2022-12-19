@@ -14,7 +14,7 @@ var paymentRouter = require('./routes/razorpay');
 var app = express();
 var cors = require('cors');
 
-app.options("*", cors({ origin: ['http://localhost:3000', 'https://book-buddy.s3-website-us-east-1.amazonaws.com'], optionsSuccessStatus: 200 }));
+app.options("*", cors({ origin: ['http://localhost:3000', 'https://book-buddy.s3-website-us-east-1.amazonaws.com', 'http://book-buddy.s3-website-us-east-1.amazonaws.com'], optionsSuccessStatus: 200 }));
 
 const corsOptions = {
   origin: '*',
